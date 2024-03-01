@@ -1,0 +1,14 @@
+name: Deploy to WP Engine (c66be33a-12ff-441b-8a94-0ff7872a1633 - website)
+on:
+  push:
+    branches:
+      - c66be33a-12ff-441b-8a94-0ff7872a1633
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      WPE_ENV: aipress
+    steps:
+    - name: 🔄 Check out the repository
+      uses: actions/checkout@v3
+    # Add your remaining steps here
